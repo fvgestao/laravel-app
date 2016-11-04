@@ -1,0 +1,34 @@
+{
+  "name": "alustau/laravel-app",
+  "description": "Library to organizer your model and validations",
+  "type": "library",
+  "require": {
+    "illuminate/contracts": "5.3.*",
+    "illuminate/database": "5.3.*",
+    "illuminate/routing": "5.3.*",
+    "symfony/http-foundation": "3.1.*",
+    "illuminate/http": "^5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "alustau",
+      "email": "denisalustau@gmail.com"
+    }
+  ],
+
+  "autoload": {
+    "psr-4": {
+      "Alustau\\App\\": "src/"
+    }
+  },
+
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  }
+}

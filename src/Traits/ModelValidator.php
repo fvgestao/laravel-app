@@ -113,9 +113,8 @@ trait ModelValidator
     }
 
     /**
-     * @param array $data
+     * @param $data
      * @return bool
-     * @throws ValidationException
      */
     public function validOrRedirect($data)
     {
@@ -131,6 +130,23 @@ trait ModelValidator
                 ->withErrors($validation->errors()->toArray());
         }
 
+
         return true;
     }
+
+    /**
+     * @param $data
+     * @return bool
+     */
+    public function valid($data)
+    {
+        $validation = $this->isValid($data);
+
+        if ($validation->fails()) {
+            return $validation->errors()->toArray();
+        }
+
+        return true;
+    }
+
 }

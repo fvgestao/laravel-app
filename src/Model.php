@@ -2,7 +2,7 @@
 
 namespace Alustau\App;
 
-use Alustau\API\Traits\ModelValidator as Validator;
+use Alustau\App\Traits\ModelValidator as Validator;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
 abstract class Model

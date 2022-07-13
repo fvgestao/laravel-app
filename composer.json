@@ -1,5 +1,5 @@
 {
-  "name": "alustau/laravel-app",
+  "name": "fvgestao/laravel-app",
   "description": "Library to organizer your model and validations",
   "type": "library",
   "require": {
